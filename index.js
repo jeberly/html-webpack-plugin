@@ -283,7 +283,7 @@ HtmlWebpackPlugin.prototype.injectAssetsIntoHtml = function(html, templateParams
   });
   // Turn script files into script tags
   scripts = scripts.map(function(scriptPath) {
-    return '<script src="' + scriptPath + '"></script>';
+    return '<script async src="' + scriptPath + '"></script>';
   });
   // Turn css files into link tags
   styles = styles.map(function(stylePath) {
